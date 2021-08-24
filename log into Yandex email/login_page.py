@@ -11,10 +11,10 @@ class LoginPage(BasePage):
         assert self.get_title() == 'Авторизация'
 
     def input_login(self):
-        self.find_elem(locators.ID_FORM).send_keys('+375447403005')
+        self.find_elem(locators.ID_FORM).send_keys('ID or phone number')
 
     def input_password(self):
-        self.find_elem(locators.PASSWORD).send_keys('mns161015')
+        self.find_elem(locators.PASSWORD).send_keys('password')
 
     def press_sign_in_button(self):
         self.find_elem(locators.SUBMIT).click()
